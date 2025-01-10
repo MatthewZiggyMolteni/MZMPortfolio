@@ -3544,47 +3544,6 @@ img.u-pull-left {
 
 
 
-/* --------------------------------------------------------------------
- * ## about clients
- * -------------------------------------------------------------------- */
-.s-about__clients {
-    padding-top : var(--vspace-0_5);
-    overflow    : hidden;
-}
-
-.s-about__clients .clients-list {
-    list-style  : none;
-    display     : flex;
-    flex-flow   : row wrap;
-    margin-left : 0;
-}
-
-.s-about__clients .clients-list a {
-    color : var(--color-text-dark);
-}
-
-.s-about__clients .clients-list a:focus,
-.s-about__clients .clients-list a:hover {
-    color : var(--color-1);
-}
-
-.s-about__clients .clients-list li {
-    display      : inline-block;
-    padding-left : 0;
-    position     : relative;
-}
-
-.s-about__clients .clients-list li:not(:last-child)::after {
-    content     : "/";
-    font-family : var(--font-1);
-    font-weight : 300;
-    font-size   : .48em;
-    color       : var(--color-1-light);
-    margin      : 0 .2em 0 .3em;
-    position    : relative;
-    bottom      : .05em;
-}
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
@@ -3818,117 +3777,6 @@ img.u-pull-left {
     transform  : scale(1);
 }
 
-/* ------------------------------------------------------------------- 
- * ## testimonial slider
- * ------------------------------------------------------------------- */
-.testimonials {
-    margin-top : var(--vspace-4_5);
-}
-
-.testimonial-slider {
-    padding-right  : var(--vspace-4);
-    padding-left   : var(--vspace-4);
-    padding-bottom : var(--vspace-1_5);
-}
-
-
-.testimonial-slider__slide {
-    display: flex; /* Create a horizontal layout */
-    align-items: center; /* Vertically center the content */
-    justify-content: space-between; /* Space out image and text */
-    text-align: left; /* Align text to the left */
-    gap: var(--vspace-2); /* Add consistent spacing between image and text */
-}
-
-.testimonial-slider__avatar {
-    width: 2048px; /* Set fixed size (2 inches at 96dpi) */
-    height: 300px; /* Ensure height matches width for a perfect circle */
-    border-radius: 10%; /* Ensure the image stays circular */
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for better aesthetics */
-    margin-right: var(--vspace-2); /* Add space between image and text */
-}
-
-.testimonial-slider__author {
-    display: flex;
-    flex-direction: column; /* Stack name and company vertically */
-    justify-content: center; /* Center content vertically */
-    text-align: left; /* Ensure text aligns properly */
-    flex-grow: 1; /* Allow the text area to expand */
-}
-
-.testimonial-slider__slide p {
-    font-size: var(--text-lg); /* Reduce text size slightly */
-    line-height: 1.5; /* Adjust line height for readability */
-    margin-bottom: var(--vspace-1); /* Add spacing below the paragraph */
-}
-
-.testimonial-slider__cite {
-    display : block;
-}
-
-.testimonial-slider__cite strong,
-.testimonial-slider__cite span {
-    font-style : normal;
-    transition : all 0.3s ease-in-out;
-}
-
-
-
-
-.testimonial-slider__cite strong {
-    font-size: var(--text-md); /* Adjust font size for the name */
-}
-
-.testimonial-slider__cite span {
-    font-size: var(--text-sm); /* Adjust font size for the company */
-    color: var(--color-gray-7); /* Subtle color for the company name */
-}
-
-
-
-.testimonial-slider__next,
-.testimonial-slider__prev {
-    z-index          : 10000;
-    display          : flex;
-    justify-content  : center;
-    align-items      : center;
-    border-radius    : 50%;
-    background-color : var(--color-gray-2);
-    height           : var(--vspace-1_75);
-    width            : var(--vspace-1_75);
-    cursor           : pointer;
-    transform        : translateY(-50%);
-    position         : absolute;
-    top              : calc(50% - var(--vspace-1_5));
-}
-
-.testimonial-slider__next svg,
-.testimonial-slider__prev svg {
-    height : var(--vspace-0_75);
-    width  : var(--vspace-0_75);
-}
-
-.testimonial-slider__next svg path,
-.testimonial-slider__prev svg path {
-    fill : var(--color-text-dark);
-}
-
-.testimonial-slider__next {
-    right : 0;
-}
-
-.testimonial-slider__prev {
-    left : 0;
-}
-
-.swiper-button-disabled {
-    cursor : default;
-}
-
-.swiper-button-disabled svg path {
-    fill : var(--color-gray-8);
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3948,21 +3796,6 @@ img.u-pull-left {
         padding-left  : var(--vspace-3_5);
     }
 
-    .testimonial-slider__slide p {
-        font-size : var(--text-lg);
-    }
-
-    .testimonial-slider__next,
-    .testimonial-slider__prev {
-        height : var(--vspace-1_5);
-        width  : var(--vspace-1_5);
-    }
-
-    .testimonial-slider__next svg,
-    .testimonial-slider__prev svg {
-        height : var(--vspace-0_625);
-        width  : var(--vspace-0_625);
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -3974,11 +3807,6 @@ img.u-pull-left {
     .folio-item__meta {
         font-size : calc(var(--text-size) * 0.7368);
     }
-
-    .testimonial-slider {
-        padding-right : var(--vspace-2_5);
-        padding-left  : var(--vspace-2_5);
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -3988,21 +3816,6 @@ img.u-pull-left {
 
     .folio-list .column:nth-child(2n+2) {
         padding-left : var(--gutter);
-    }
-
-    .testimonials {
-        margin-top : var(--vspace-3);
-        max-width  : 600px;
-    }
-
-    .testimonial-slider {
-        padding-right : 0;
-        padding-left  : 0;
-    }
-
-    .testimonial-slider__next,
-    .testimonial-slider__prev {
-        display : none;
     }
 }
 
