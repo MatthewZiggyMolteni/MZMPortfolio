@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ziggy</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="line"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header id="masthead" class="s-header">
+            <div class="s-header__block">
+                <div class="s-header__branding">
+                    <p class="site-title">
+                        <a href="index.html" rel="home">ZMolteni</a>
+                    </p>
+                </div>
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- End Header Block -->
+
+            <div class="row s-header__nav-wrap">
+                <nav class="s-header__nav">
+                    <ul>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#experience" class="smoothscroll">Experience</a></li>
+                        <li><a href="#projects" class="smoothscroll">Projects</a></li>
+                        <li><a href="#colophon" class="smoothscroll">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/matthewmolteni/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20, 2H4C3.447 2 3 2.447 3 3v18c0 0.553 0.447 1 1 1h16c0.553 0 1-0.447 1-1V3c0-0.553-0.447-1-1-1zM8.339 18.278H5.982v-8.347h2.357v8.347zM7.161 8.4c-0.769 0-1.392-0.623-1.392-1.392S6.392 5.615 7.161 5.615 8.554 6.239 8.554 7.008c0 0.77-0.623 1.392-1.392 1.392zM18.333 18.278h-2.357v-4.295c0-1.024-0.017-2.343-1.428-2.343-1.428 0-1.647 1.116-1.647 2.268v4.37h-2.357v-8.347h2.265v1.14h0.031c0.316-0.597 1.089-1.226 2.244-1.226 2.401 0 2.843 1.58 2.843 3.636v4.797z"></path></svg>
+                            <span class="u-screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                            <span class="u-screen-reader-text">Twitter</span>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                            <span class="u-screen-reader-text">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1TLtwX6SvP-BenyXveEbDA5wSlN9NKhZB/view">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-2 9h-4v-2h4v2zm4-4H7v-2h8v2z"></path></svg>
+                            <span class="u-screen-reader-text">Resume</span>
+                        </a>
+                    </li>
+                </ul>  <!-- end s-header__social -->
+
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- intro
+        ================================================== -->
+        <section id="intro" class="s-intro">
+
+            <div class="row">
+                <div class="column lg-12 s-intro__content">
+
+                    <div class="s-intro__text">
+                        <h1 class="s-intro__text-huge animate-on-load">
+                            Ziggy
+                        </h1>
+                        <h3 class="animate-on-load">Data Scientist <span>+</span> Economist</h3>
+                    </div>
+
+                    <div class="s-intro__bg"></div>
+
+                </div>
+            </div>
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- about
+        ================================================== -->
+        <section id="about" class="s-about">
+            <!-- About Intro -->
+            <div class="s-about__block s-about__intro">
+                <div class="row">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle animate-on-load">About Me</h2>
+                        <p class="attention-getter animate-on-load">
+                            Driven and dedicated Data Science student who possesses a genuine passion for sports. With a proactive approach to learning, I consistently seek out new opportunities to expand my knowledge and skill set. I have demonstrated the ability to quickly grasp complex concepts and thrive in both independent and collaborative work environments. My positive attitude, combined with my strong work ethic, allows me to efficiently accomplish tasks while maintaining a harmonious and supportive atmosphere. I approach every opportunity with enthusiasm and a commitment to delivering high-quality results.
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end s-about__intro -->
+        </section> <!-- end s-about -->
+
+
+        <!-- experience
+        ================================================== -->
+        <section id="experience" class="s-experience">
+            <!-- Resume Header -->
+            <div class="s-about__block s-about__career">
+                <div class="row s-about__career-header">
+                    <div class="column lg-12">
+                        <p class="text-huge-title">
+                            Education, Experience, & Skills
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row s-experience__timeline" data-animate-block>
+                    <div class="column lg-6 stack-on-900 s-experience__timeline-section" data-animate-el>
+    
+                        <h2 class="text-subtitle">
+                            Experience
+                        </h2>
+    
+                        <div class="timeline">
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">ABSOLUT Sport</h3>
+                                    <h5 class="timeline__meta">Data Analyst Intern</h5>
+                                    <p class="timeline__timeframe">April 2024 - August 2024</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Managed client requests, curating personalized experiences using predictive analytics to align services with consumer behavior insights. Streamlined data integrity for inventory management, ensuring real-time data accuracy and enhancing e-commerce operations.</p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Xe Money Transfer</h4>
+                                    <h5 class="timeline__meta">Data Science Intern</h5>
+                                    <p class="timeline__timeframe">June 2023 - August 2023</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Collaborated on optimizing machine learning models for financial crime, aligning data-driven solutions with strategic goals.
+                                        Utilized Python and SQL to extract and analyze data from AWS S3 and RDS databases, improving operational efficiency.
+                                        Developed data pipelines and testing modules, effectively communicating problems and solutions to the team.</p>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+    
+                    </div> <!-- end s-experience__timeline-section -->
+    
+                    <div class="column lg-6 stack-on-900 s-experience__timeline-section" data-animate-el>
+    
+                        <h2 class="text-subtitle">
+                            Education
+                        </h2>
+    
+                        <div class="timeline">
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Chapman University</h3>
+                                    <h5 class="timeline__meta">B.S. in Data Science, Minor in Economics</h5>
+                                    <p class="timeline__timeframe">August 2022 - May 2026</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Attended the Fowler School of Engineering and the Argyros College of Business & Economics. Relevant Coursework taken includes but is not limited to: Data Structures & Algorithms, Quantitative Finance, Statistical Models in Business, and Database Management.</p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">V.P. of Brotherhood</h4>
+                                    <h5 class="timeline__meta">Beta Theta Pi </h5>
+                                    <p class="timeline__timeframe">November 2023 - November 2024</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Serving as Vice President of Brotherhood I was tasked with organizing chapter brotherhood events from start to finish, as well as aid the President and New Member Educator with various tasks, expanding my role beyond initial description. Leading this group of young men has taught me various skills like dealing with conflicts of interest, organization and teamwork, as well as making tough decisions under pressure while keeping the organizations best interest in mind.</p>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+                        
+                    </div> <!-- end s-experience__timeline-section -->
+    
+                </div> <!-- end experience__timeline -->
+                <div class="row s-experience__skills" data-animate-block>
+                    <div class="column lg-12" data-animate-el>
+    
+                        <h2 class="text-subtitle">
+                            Skills & Expertise
+                        </h2>
+    
+                        <ul class="skill-bars">
+                            <li>
+                            <div class="progress percent95"></div>
+                            <strong>Python</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent95"></div>
+                            <strong>R</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent90"></div>
+                            <strong>SQL</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent95"></div>
+                            <strong>Excel</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent85"></div>
+                            <strong>C++</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent85"></div>
+                            <strong>HTML</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent75"></div>
+                            <strong>Java</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent80"></div>
+                            <strong>Tableau</strong>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div> <!-- end s-about__skills -->
+
+                <!-- <div class="row s-experience__skills" data-animate-block>
+                    <div class="column lg-12" data-animate-el>
+                        <h2 class="text-subtitle">Skills & Expertise</h2>
+                    </div>
+                    <div class="column lg-6" data-animate-el>
+                        <ul class="skill-bars">
+                            <li>
+                                <div class="progress percent95"></div>
+                                <strong>Python</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent90"></div>
+                                <strong>SQL</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent85"></div>
+                                <strong>C++</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent75"></div>
+                                <strong>Java</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column lg-6" data-animate-el>
+                        <ul class="skill-bars">
+                            <li>
+                                <div class="progress percent95"></div>
+                                <strong>R</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent95"></div>
+                                <strong>Excel</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent85"></div>
+                                <strong>HTML</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent80"></div>
+                                <strong>Tableau</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+            </div> <!-- end s-experience__skills -->
+
+        </section> <!-- end s-experience -->
+
+
+        <!-- # projects
+        ================================================== -->
+        <section id="projects" class="s-projects">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <h2 class="text-pretitle">Relevant Projects</h2>
+
+                    <p class="text-huge-title">
+                    Projects & Conferences
+                    </p>
+                </div>
+            </div>
+
+            <div class="row folio-list block-lg-one-half block-stack-on-550" data-animate-block>
+
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Baseball_project.jpeg" Title="Pitch Clock Effect" data-size="950x550">
+                                <img src="images/portfolio/Baseball_project.jpeg" 
+                                     srcset="images/portfolio/Baseball_project.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Baseball Data Analysis</span>
+                                <a href="https://www.linkedin.com/in/matthewmolteni/" title="Project Link" class="project-link">Read More</a>
+                            </div>
+                            <h4 class="folio-item__title">The Pitch Clock Effect</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>I analyzed MLB data to study the impact of the new pitch clock on the game, using machine learning in Python to examine pitching and hitting patterns before and after its implementation. The project uncovered subtle trends in how the pitch clock affects player performance.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Beyond_the_playbook.jpeg" title="Beyond_the_playbook" data-size="950x550">
+                                <img src="images/portfolio/Beyond_the_playbook.jpeg" 
+                                     srcset="images/portfolio/Beyond_the_playbook.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Football Analytics</span>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7158173129255571457/" title="Project Link" class="project-link">Read More</a>
+                            </div>
+                            <h4 class="folio-item__title">Beyond the Playbook</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Leveraged computer vision and machine learning to analyze NFL tracking data, enhancing predictive models by incorporating positional data and player movements to forecast play outcomes and team strategies effectively.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Data_to_Goals.png" title="From Data to Goals" data-size="950x550">
+                                <img src="images/portfolio/Data_to_Goals.png" 
+                                     srcset="images/portfolio/Data_to_Goals.png" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Soccer Data Analysis</span>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7099405810342006788/" title="Project Link" class="project-link">Read More</a>
+                            </div>
+                            <h4 class="folio-item__title">From Data to Goals</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Utilized tools from data scraping to coding my own machine learning models using historical match data to produce robust and reliable predictions for soccer game results.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Alteryx_scaled.jpeg" title="Alteryx Winner" data-size="950x550">
+                                <img src="images/portfolio/Alteryx_scaled.jpeg" 
+                                     srcset="images/portfolio/Alteryx_scaled.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Sports Datathon</span>
+                                <a href="https://www.linkedin.com/posts/matthewmolteni_this-past-friday-september-29th-i-had-the-activity-7114358794926620672-_LDq?utm_source=share&utm_medium=member_desktop" title="Project Link" class="project-link">Read More</a>
+                            </div>
+                            <h4 class="folio-item__title">
+                                Alteryx Datathon Winner
+                            </h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>My team and I placed 1st in the Alteryx SparkED Datathon, where we worked together to analyze sports datasets and create a meaningful presentation. Through collaborative problem solving and clear data storytelling, we made it to the final round and were fortunate to come out on top in the timed analysis challenge. </p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Medtech_scaled.jpeg" title="Medtech" data-size="950x550">
+                                <img src="images/portfolio/Medtech_scaled.jpeg" 
+                                     srcset="images/portfolio/Medtech_scaled.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Conferences</span>
+                                <a href="https://www.linkedin.com/posts/matthewmolteni_this-week-i-had-the-fortunate-opportunity-activity-7118356900303265792-O6dR?utm_source=share&utm_medium=member_desktop" title="Project Link" class="project-link">Read More</a>
+                            </div>
+                            <h4 class="folio-item__title">Medtech & Global AI Conferences</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>At the Medtech Conference and Global AI Conference I was able to network with business professionals and learn more about how different industries are evolving and adapting to the new age of technology. I had great conversations about how innovative solutions using AI are imminent in almost all sectors especially Medtech and Fintech.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Hackathon.jpeg" title="Hackathon" data-size="950x550">
+                                <img src="images/portfolio/Hackathon.jpeg" 
+                                     srcset="images/portfolio/Hackathon.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Hackathons</span>
+                                <a href="https://www.linkedin.com/in/matthewmolteni/" title="Project Link" class="project-link">Read More</a>
+                            </div>
+                            <h4 class="folio-item__title">UCI Hackathon & Datathon</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>During the UCI Hackathon, I had the opportunity to attend workshops and seminars on tools like Pandas, scikit-learn, and Twilio, which provided valuable insights into professional development. In the UCI Datathon, my team worked together to build a sentiment analysis model for Yelp reviews, using the ChatGPT API to classify feedback. This project gave us the chance to explore how data can inform business decisions, while emphasizing the importance of accuracy and attention to detail.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+    
+            </div> <!-- folio-list -->
+
+        </section> <!-- end s-about -->
+
+
+
+        <!-- # site footer
+        ================================================== -->
+        <footer id="colophon" class="s-footer">
+
+            <div class="row s-footer__contact-content">
+
+                <div class="column lg-5 md-6 stack-on-900 left-block">
+                    <h2 class="text-pretitle">Get In Touch</h2>
+                    <p>
+                        Bringing data to life to create value driven impact, making every number count towards smarter solutions.
+                    <div class="s-footer__buttons">
+                        <a href="mailto:mzmolteni@gmail.com" class="btn btn--primary u-fullwidth">Say Hello</a>
+                        <a href="https://drive.google.com/file/d/1TLtwX6SvP-BenyXveEbDA5wSlN9NKhZB/view?usp=sharing" class="btn btn--stroke u-fullwidth">Get My Resume</a>
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="column lg-4 md-5 stack-on-900 right-block">
+
+                    <div class="s-footer__contact-info" >
+                        <h2 class="text-subtitle">
+                            Contact Me
+                        </h2>
+                        <ul class="link-list">
+                            <li><a href="mailto:mzmolteni@gmail.com">mzmolteni@gmail.com</a></li>
+                            <li><a href="tel:+19495104177">+1 949 510 4177</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="s-footer__social">
+                        <h2 class="text-subtitle">
+                            Connect
+                        </h2>
+                        <ul class="link-list">
+                            <li><a href="https://www.linkedin.com/in/matthewmolteni/">LinkedIn</a></li>
+                            <!-- <li><a href="#0">Twitter</a></li> -->
+                            <li><a href="#0">Github</a></li>
+                            <li><a href="mailto:mzmolteni@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div> <!-- end s-footer__contact-content -->
+
+            <div class="row s-footer__bottom">
+                <div class="column ss-copyright">
+                    <span>© Copyright Augustine 2022</span> 
+                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                    </a>
+                </div>
+            </div> <!-- end s-footer__bottom-->
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end s-pagewrap -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
